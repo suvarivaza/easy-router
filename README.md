@@ -8,8 +8,10 @@ Runs the controller or file registered in the routes array according to the curr
 
 Just download and include the library to your project.
 
+```
 include 'src/EasyRouter.php';
 use Suvarivaza\ER\EasyRouter; // use namespace EasyRouter
+```
 
 **Usage**
 
