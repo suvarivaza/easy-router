@@ -2,6 +2,7 @@
 
 namespace Suvarivaza\ER;
 
+
 class EasyRouter
 {
     protected $path;

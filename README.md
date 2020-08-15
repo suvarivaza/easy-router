@@ -1,3 +1,5 @@
+#EasyRouter
+
 **About**
 
 This is a Easy Router component.
