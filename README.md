@@ -17,7 +17,6 @@ use Suvarivaza\ER\EasyRouter; // use namespace EasyRouter
 
 **Usage**
 
-
 1. First, let's create an array with routes and register them.
 2. Create an object of the EasyRouter class.
 3. Execute the RUN method.
