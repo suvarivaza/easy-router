@@ -58,4 +58,3 @@ Method RUN gets two arguments:
 $router | array 
 $uri | string
 
-It's all! Enjoy!
