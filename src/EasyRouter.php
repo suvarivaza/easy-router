@@ -48,20 +48,20 @@ class EasyRouter
                         if(method_exists($controller, $method)){
                             $controllerObject->{$method}();
                         } else{
-                            throw new \Exception("Не удалось загрузить метод: {$route['method']} класса $controller");
+                            throw new \Exception("Failed to load method: {$controller}/{$route['method']}");
                         }
                     }
                     exit;
                 } else {
-                    throw new \Exception("Не удалось загрузить класс: $controller");
+                    throw new \Exception("Failed to load class: $controller");
                 }
             } else {
-                if(isset($routes['/rakhim_oop3/404'])){
+                if(isset($routes['/404'])){
 
-                    include $routes['/rakhim_oop3/404']['path'] . $routes['/rakhim_oop3/404']['file'];
+                    include $routes['/404']['path'] . $routes['/404']['file'];
                     exit;
                 }
-                throw new \Exception('Страница не найдена 404', 404);
+                throw new \Exception('Page not found 404', 404);
             }
         } catch (\Exception $e ){
             echo $e->getMessage();
