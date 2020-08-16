@@ -48,12 +48,12 @@ class EasyRouter
                         if(method_exists($controller, $method)){
                             $controllerObject->{$method}();
                         } else{
-                            throw new \Exception("Не удалось загрузить метод: {$route['method']} класса $controller", 500);
+                            throw new \Exception("Не удалось загрузить метод: {$route['method']} класса $controller");
                         }
                     }
                     exit;
                 } else {
-                    throw new \Exception("Не удалось загрузить класс: $controller", 500);
+                    throw new \Exception("Не удалось загрузить класс: $controller");
                 }
             } else {
                 if(isset($routes['/rakhim_oop3/404'])){
