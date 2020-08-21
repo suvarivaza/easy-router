@@ -20,8 +20,6 @@ class EasyRouter
         spl_autoload_register(function($class){
             if(is_file("{$this->path}{$class}.php")){
                 include "{$this->path}{$class}.php";
-            } else {
-                die("file {$this->path}{$class}.php not found");
             }
         });
 
